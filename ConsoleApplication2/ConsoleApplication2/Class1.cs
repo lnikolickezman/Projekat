@@ -39,7 +39,7 @@ namespace ConsoleApplication2
 
         public override string ToString()
         {
-            return "Personalizacija " + Ime + " " + Broj;
+            return "Person: 1. " + Ime + " " + Broj;
         }
 
     }
