@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{AD030658-4F2D-4BB9-874F-E303C1274B30}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Projekat</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="ConsoleApplication2\ConsoleApplication2.sln" />
+    <Content Include="ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe" />
+    <Content Include="ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb" />
+    <Content Include="ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.vshost.exe" />
+    <Content Include="ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.csproj" />
+    <Content Include="ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csproj.FileListAbsolute.txt" />
+    <Content Include="ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe" />
+    <Content Include="ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ConsoleApplication2\ConsoleApplication2\App.config" />
+    <None Include="ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config" />
+    <None Include="ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.vshost.exe.config" />
+    <None Include="ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.vshost.exe.manifest" />
+    <None Include="ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache" />
+    <None Include="ConsoleApplication2\ConsoleApplication2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsoleApplication2\ConsoleApplication2\Class1.cs" />
+    <Compile Include="ConsoleApplication2\ConsoleApplication2\Program.cs" />
+    <Compile Include="ConsoleApplication2\ConsoleApplication2\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\" />
+    <Folder Include=".vs\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

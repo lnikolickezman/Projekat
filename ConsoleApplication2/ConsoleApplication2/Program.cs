@@ -12,7 +12,7 @@ namespace ConsoleApplication2
         {
             Person p = new Person();
             p.Broj = 2;
-            p.Ime = "Pera";
+            p.Ime = "PeraPericIzmenibre";
             Console.WriteLine("Genres: {0}, {1}", p.Broj, p.Ime);
             Console.WriteLine("{0}", p);
             Console.ReadKey();
